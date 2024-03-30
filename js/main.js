@@ -6,6 +6,8 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     arrows: false,
   });
+
+  $(".thisYear").text( (new Date).getFullYear() );
 });
 
 window.onload = function () {
