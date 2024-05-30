@@ -1,0 +1,36 @@
+.footer {
+    padding: 23px 0;
+    background: var(--bg-footer);
+    border-top: 2px solid #47175b;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width:590px) {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    p {
+        color: var(--color-white);
+        line-height: 27px;
+        font-family: var(--ff-poppins);
+        flex: 1;
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        gap: 5px;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

@@ -8,17 +8,12 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-scss
 dist
 dist-ssr
 *.local
 
 # Editor directories and files
 .vscode/*
-scss/*
-css/main.css
-css/main.css.map
-css/main.min.css.map
 !.vscode/extensions.json
 .idea
 .DS_Store

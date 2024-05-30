@@ -1,0 +1,49 @@
+.works {
+    padding-top: 140px;
+
+    @media (max-width:590px) {
+        padding-top: 50px;
+    }
+
+    h2 {
+        font-size: 58px;
+        line-height: 64px;
+        text-align: center;
+    }
+    
+    button {
+        font-family: var(--ff-inter);
+        font-size: 15px;
+        line-height: 18px;
+        color: var(--color-white);
+        background: #283445;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background: url(../img/btn-border.png) no-repeat;
+            z-index: -1;
+            height: 48px;
+            width: 203px;
+            bottom: -5px;
+            left: -5px;
+        }
+
+        a {
+            padding: 14px 48px;
+            background: #283445;
+        }
+    }
+
+    &-block {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 75px 0 50px;
+    }
+}

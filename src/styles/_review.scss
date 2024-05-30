@@ -1,0 +1,90 @@
+.review {
+    padding-top: 140px;
+
+    @media (max-width:590px) {
+        padding-top: 50px;
+    }
+
+    h3 {
+        letter-spacing: 2.491px;
+        font-size: 55px;
+        line-height: 61px;
+        text-align: center;
+    }
+
+    .slick-slider {
+        max-width: 980px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .slider-block {
+        border: 1px solid #283445;
+        max-width: 980px;
+        width: 100%;
+        margin: 73px 0 258px;
+        position: relative;
+        z-index: -2;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background: url(../img/slider-icon.svg) no-repeat; 
+            top: -30px;
+            left: 40px;
+            width: 60px;
+            height: 51px;
+            z-index: 5;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background: url(../img/slider-icon2.svg) no-repeat; 
+            bottom: -30px;
+            right: 40px;
+            width: 60px;
+            height: 51px;
+            z-index: 5;
+        }
+        
+        h4 {
+            padding-top: 35px;
+            text-align: center;
+            max-width: 445px;
+            width: 100%;
+            margin: 0 auto;
+            font-size: 28px;
+            line-height: 31px;
+        }
+
+        p {
+            padding: 24px 0 89px;
+            text-align: center;
+            max-width: 850px;
+            width: 100%;
+            margin: 0 auto;
+            font-family: var(--ff-inter);
+            font-size: 15px;
+            line-height: 18px;
+            font-weight: 600;
+            color: var(--color-grey);
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                background: url(../img/slider-img.png) no-repeat; 
+                bottom: -50px;
+                right: 368px;
+                width: 122px;
+                height: 122px;
+                z-index: 5;
+
+                @media (max-width:590px) {
+                    right: 150px;
+                }
+            }
+        }
+    }
+}
