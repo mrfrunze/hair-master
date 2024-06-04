@@ -1,46 +1,35 @@
-import React from 'react'
+import { useFetchProjects } from "../fetchProject"
 
 const Works = () => {
-  return (
-    <section className="works" id="work">
-            <h2 className="inner-title">Gallery</h2>
-            <div className="container">
-                <div className="works-block" data-aos="fade-up" data-aos-duration="800">
-                    <div className="works-item">
-                        <figure>
-                            <img src="img/hair1.jpg" alt=""/>
-                        </figure>
-                    </div>
-                    <div className="works-item">
-                        <figure>
-                            <img src="img/hair2.jpg" alt=""/>
-                        </figure>
-                    </div>
-                    <div className="works-item">
-                        <figure>
-                            <img src="img/hair3.jpg" alt=""/>
-                        </figure>
-                    </div>
-                    <div className="works-item">
-                        <figure>
-                            <img src="img/hair4.jpg" alt=""/>
-                        </figure>
-                    </div>
-                    <div className="works-item">
-                        <figure>
-                            <img src="img/hair5.jpg" alt=""/>
-                        </figure>
-                    </div>
-                    <div className="works-item">
-                        <figure>
-                            <img src="img/hair6.jpg" alt=""/>
-                        </figure>
+    const {loading, projects} = useFetchProjects()
+    // console.log(projects);
+    if(loading){
+        return (
+            <section className="projects">
+                <h2>Loading...</h2>
+            </section>
+        )
+    }
+    return (
+        <section className="works" id="work">
+                <h2 className="inner-title">Gallery</h2>
+                <div className="container">
+                    <div className="works-block">
+                        {projects.map(item => {
+                            const {id, img, title} = item
+                            return (
+                                <div className="works-item" key={id}>
+                                    <figure>
+                                        <img src={img} alt={title} />
+                                        <span className="text">{title}</span>
+                                    </figure>
+                                </div>
+                            )
+                        })}
                     </div>
                 </div>
-                {/* <button className="works-btn"><a href="">Больше робот</a></button> */}
-            </div>
-        </section>
-  )
+            </section>
+    )
 }
 
 export default Works
