@@ -11,7 +11,7 @@ const Works = () => {
         )
     }
     return (
-        <section className="works" id="work">
+        <section className="works" id="gallery">
                 <h2 className="inner-title">Gallery</h2>
                 <div className="container">
                     <div className="works-block">
