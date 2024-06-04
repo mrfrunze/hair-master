@@ -40,15 +40,18 @@
             color: var(--color-white);
             background: #283445;
             position: relative;
+            width: 202px;
+            padding: 14px 0;
 
             &::before {
                 position: absolute;
                 content: "";
-                background: url(../img/btn-border.png) no-repeat;
+                background: url(../assets/btn-border.png) no-repeat;
+                z-index: -1;
                 z-index: -1;
                 height: 48px;
                 width: 203px;
-                top: -10px;
+                top: 5px;
                 left: -5px;
             }
         }
@@ -67,7 +70,7 @@
         max-width: 400px;
         height: 569px;
         width: 100%;
-        background: url(../img/hero-img.png) no-repeat center;
+        background: url(../assets/hero-img.png) no-repeat center;
         display: flex;
         justify-content: center;
         align-items: flex-end;

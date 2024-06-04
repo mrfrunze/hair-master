@@ -1,14 +1,16 @@
-import React from 'react'
+import {hair2} from "../assets/"
+import { FaTelegramPlane, FaInstagram, FaWhatsapp } from "react-icons/fa";
+
 
 const About = () => {
   return (
     <section className="about" id="about me">
       <h2 className="inner-title">About me</h2>
       <div className="container">
-        <div className="about-content" data-aos="fade-down" data-aos-duration="800">
+        <div className="about-content">
           <div className="about-img">
             <figure>
-              <img src="img/photo2.jpg" alt=""/>
+              <img src={hair2} alt=""/>
             </figure>
           </div>
           <div className="about-text">
@@ -25,11 +27,17 @@ const About = () => {
             <p>
               I'll be glad to make you better
             </p>
-            <ul>
-              <li><a href="https://t.me/nataliia_hairmasster" target="_blank"><img src="img/telegram-black.svg" alt=""/></a></li>
-              <li><a href="https://www.instagram.com/_frisornatali" target="_blank"><img src="img/instagram-black.svg" alt="instagram" /></a></li>
-              <li><a href="https://wa.me/<46767431320>" target="_blank"><img src="img/whatsapp-black.svg" alt="whatsapp" /></a></li>
-            </ul>
+            <div className="social">
+              <a href="https://t.me/nataliia_hairmasster" target="_blank">
+                <FaTelegramPlane  />
+              </a>
+                <a href="https://www.instagram.com/_frisornatali" target="_blank">
+                  <FaInstagram />
+                </a>
+                <a href="https://wa.me/<46767431320>" target="_blank">
+                  <FaWhatsapp />
+                </a>
+            </div>
           </div>
         </div>
       </div>

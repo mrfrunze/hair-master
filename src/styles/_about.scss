@@ -10,7 +10,7 @@
         line-height: 64px;
         text-align: center;
     }
-    
+
     &-content {
         display: flex;
         justify-content: center;
@@ -26,7 +26,7 @@
     &-text {
         max-width: 577px;
         width: 100%;
-    
+
         p {
             margin-bottom: 20px;
             font-size: 23px;
@@ -37,26 +37,18 @@
             }
         }
 
-        ul {
-            display: flex;
-            gap: 5px;
-
-            img {
-                width: 40px;
-                height: 40px;
-            }
-        }
-
         @media (max-width:1280px) {
             max-width: 100%;
         }
     }
 
+ 
+
     &-img {
         max-width: 480px;
         height: 704px;
         width: 100%;
-        background: url(../img/about-img.png) no-repeat center;
+        background: url(../assets/about-img.png) no-repeat center;
         display: flex;
         justify-content: center;
         align-items: center;

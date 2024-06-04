@@ -24,12 +24,10 @@
             display: flex;
             position: relative;
             z-index: 3;
-            width: 35px;
-            height: 35px;
-            background: url(../img/burger.svg) no-repeat center;
+            transition: .3s linear;
 
-            &.active {
-                background: url(../img/closed.svg) no-repeat center;
+            svg{
+                font-size: 32px;
             }
         }
     }
@@ -48,25 +46,9 @@
 
         @media (max-width:890px) {
             flex-direction: column;
-            gap: 60px;
             align-items: center;
-            padding: 160px 30px;
-        }
+            padding: 30px;
 
-        .link {
-            text-transform: capitalize;
-            border-bottom: 2px solid transparent;
-            transition: .3s linear;
-            
-            &:hover {
-                border-bottom-color: #000;
-            }
-        }
-    }
-
-    .nav {
-        
-        @media (max-width:890px) {
             position: absolute;
             left: 0;
             right: 0;
@@ -77,11 +59,26 @@
             overflow-x: hidden;
             transform: translateX(-110%);
             transition: 0.3s ease-in-out;
-            background: var(--bg-main);
-            background-size: contain;
+            background: #f8f2ef;
+        }
 
-            &.open {
-                transform: translateX(0);
+        &.active {
+            transform: translateX(0);
+        }
+
+        .link {
+            text-transform: capitalize;
+            border-bottom: 2px solid transparent;
+            transition: .3s linear;
+            
+            &:hover {
+                border-bottom-color: #000;
+            }
+
+            @media (max-width:890px){
+                width: 50%;
+                padding: 10px;
+                text-align: center;
             }
         }
     }

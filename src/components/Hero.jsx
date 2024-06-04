@@ -10,7 +10,7 @@ const Hero = () => {
                         <h1>Nataliia Tsarenko</h1>
                         <p>I create magic with hair. I create images that have won the hearts of all my clients!</p>
                         <button className="hero-btn">
-                            <a href="" target="_blank">Check in</a>
+                            Check in
                         </button>
                     </div>
                     <div className="hero-img">
