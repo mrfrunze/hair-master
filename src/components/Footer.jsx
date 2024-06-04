@@ -3,6 +3,7 @@ import { FaTelegramPlane, FaInstagram, FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   const year = new Date();
   return (
+    <>
     <footer className="footer">
         <div className="footer-wrapper container">
             <p>© Natalia Hair Master <span className="thisYear">{year.getFullYear()}</span></p>
@@ -19,6 +20,8 @@ const Footer = () => {
               </div>
         </div>
     </footer>
+    {/* <button class="btn arrow-btn-up btn-visible"></button> */}
+    </>
   )
 }
 
